@@ -1,0 +1,53 @@
+---
+import Arrow from '../components/icons/arrow-up.astro'
+---
+<header class="flex h-screen w-full flex-col relative bg-slate-950">
+    <nav class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 mx-auto items-center justify-center fixed w-full z-50">
+        <ul id="box" class="flex justify-evenly text-white bg-gray-500 backdrop-blur-3xl border-2 border-gray-100 opacity-90 mt-10 rounded-lg w-full max-w-3xl text-lg flex-wrap">
+            <li class=><a href="#about" class="p-2 rounded-lg opacity-90 ">About</a></li>
+            <li class=><a href="#skills" class="p-2 rounded-lg opacity-90">Skills</a></li>
+            <li class=><a href="#" class="p-2 rounded-lg opacity-90">Cv</a></li>
+            <li class=><a href="#Projects" class="p-2 rounded-lg opacity-90">Projects</a></li>
+            <button><a href="#"><Arrow/></a></button>
+        </ul>
+    </nav>
+    <div class="flex flex-1 items-center justify-center ">
+        <h1 class="text-white font-black text-9xl text-center m-16">
+            Soy Federico Jorge Giozzi</h1>
+        <h2 class="text-white text-9xl font-bold absolute bottom-0 text-center opacity-90">!Un gusto¡</h2>
+    </div>
+<header/>
+
+</div>
+
+
+
+
+
+
+<style>
+    a{
+		text-decoration: none;
+		display: inline-block;
+        transition:all 300ms;
+	}
+    a:hover{
+        background:#1e1e1e;
+        opacity: 1;
+    }
+    h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        max-width:18ch;
+        font-size: clamp(2rem,8vw + 1rem,10vw);
+    }
+    h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: clamp(2rem,8vw + 1rem,8vw);
+    }
+    header{
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+    }
+
+</style>
